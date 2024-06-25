@@ -28,7 +28,7 @@ app.get("/", async (req, res) => {
   let timings = await results.map(result => `${result.host}: ${result.time}ms`)
   counter++;
   res.send(
-    `ARG! ${process.env.RAILWAY_REGION}<br/>${timings.join("<br/>")}`,
+    `ParRG! ${process.env.RAILWAY_REGION}<br/>${timings.join("<br/>")}`,
   );
 });
 
